@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava - MINI Tvz</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./prijava.css">
+</head>
+<body>
+    <nav>
+        <div><a href="./index.html"><img src="./images_home/tvz_logo.webp" alt="logo tvz organizacije" class="tvz_logo"></a></div>
+        <ul class="nav_links">
+            <li><a href="#">KONTAKT</a></li>
+            <li><a href="#">SLIKE</a></li>
+            <li><a href="#">GRUPE</a></li>
+            <li><a href="./prijava.html" class="aktivni_navLink">PRIJAVA</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <main class="registracija_main">
+        <div class="regForm_okvir">
+            <h1>Prijavnica za miniTvz</h1>
+            <p class="forma_uvod">Ispunite obrazac kako biste prijavili svoje dijete na jednu od naših radionica. Veselimo se budućim malim programerima!</p>
+
+            <form action="#" method="#">
+                <fieldset>
+                    <legend>Podaci o djetetu</legend>
+                    <div class="forma_grupaDiv">
+                        <label for="dijete_imeValue">Ime djeteta:</label>
+                        <input type="text" id="dijete_imeValue" name="child_name" placeholder="npr. Ana" required>
+                    </div>
+                    <div class="forma_grupaDiv">
+                        <label for="dijete_prezimeValue">Prezime djeteta:</label>
+                        <input type="text" id="dijete_prezimeValue" name="child_lastname" placeholder="npr. Anić" required>
+                    </div>
+                    <div class="forma_grupaDiv">
+                        <label for="dijete_datumRod">Datum rođenja djeteta:</label>
+                        <input type="date" id="dijete_datumRod" name="child_dob" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Podaci o roditelju/skrbniku</legend>
+                    <div class="forma_grupaDiv">
+                        <label for="roditelj_imeValue">Ime i prezime roditelja/skrbnika:</label>
+                        <input type="text" id="roditelj_imeValue" name="parent_name" placeholder="npr. Marko Marković" required>
+                    </div>
+                    <div class="forma_grupaDiv">
+                        <label for="roditelj_emailAdresa">Email adresa roditelja/skrbnika:</label>
+                        <input type="email" id="roditelj_emailAdresa" name="parent_email" placeholder="npr. marko.markovic@email.com" required>
+                    </div>
+                    <div class="forma_grupaDiv">
+                        <label for="roditelj_mobKontakt">Kontakt telefon roditelja/skrbnika:</label>
+                        <input type="tel" id="roditelj_mobKontakt" name="parent_phone" placeholder="npr. 0912345678" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Odabir grupe i napomene</legend>
+                    <div class="forma_grupaDiv">
+                        <label for="grupa_odaberiSelect">Odaberite željenu grupu:</label>
+                        <select id="grupa_odaberiSelect" name="group_selection" required>
+                            <option value="" disabled selected>-- Izaberite grupu --</option>
+                            <option value="9-11">Grupa 9-11 godina (Početnici)</option>
+                            <option value="11-13">Grupa 11-13 godina (Osnovno programiranje)</option>
+                            <option value="13-15">Grupa 13-15 godina (Robotika)</option>
+                            <option value="15-17">Grupa 15-17 godina (Napredno programiranje)</option>
+                        </select>
+                    </div>
+                    <div class="forma_grupaDiv">
+                        <label for="biljeske_textPolje">Dodatne napomene (npr. alergije, posebne potrebe):</label>
+                        <textarea id="biljeske_textPolje" name="notes" rows="4" placeholder="Unesite eventualne napomene..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="uvijeticheck">
+                    <input type="checkbox" id="uvjeti_potvrdaCheck" name="terms_agree" required>
+                    <label for="uvjeti_potvrdaCheck" class="checkbox_oznakaLabel">Prihvaćam <a href="#" target="_blank">uvjete korištenja</a> i <a href="#" target="_blank">pravila privatnosti</a>.</label>
+                </div>
+
+                <button type="submit" class="submit_gumbFinal">Pošalji prijavu</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_newsletter">
+            <p id="newstext">Prijavite se na newsletter:</p>
+            <input type="text" class="inputnews" placeholder=" npr. primjer@gmail.hr">
+            <button class="newsletterbtn">Pošalji</button>
+        </div>
+        <div class="footer_contact">
+            <p>minitvz@gmail.com</p>
+            <p>+385xxxxxxx</p>
+            <p>Vrbik 8, 10000, Zagreb</p>
+            <p>&#169 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

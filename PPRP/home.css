@@ -64,7 +64,7 @@ nav{
     background: rgba(1,66,122,0.7);
     padding: 20px 20px;
     border-radius: 10px;
-    width: 30%;
+    width: 35%;
     height: auto;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     box-shadow: 1px 1px 5px rgba(10, 10, 0, 1);
@@ -84,18 +84,31 @@ nav{
 }
 
 .prijava_btn{
-    background-color: rgb(0, 127, 212);
-    color: white;
     border-radius: 10px;
-    border: none;
-    height: 40px;
-    width: 180px;
-    transition-duration: 0.4s;
+    height: 60px;
+    max-width: 200px;
     font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.prijava_btn a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .prijava_btn:hover{
     background-color:rgb(0, 160, 212);
+    
 }
 
 .row-section{
@@ -171,12 +184,185 @@ nav{
     background-color: transparent;
     text-align: center;
     gap: 10px;
-    max-width: 400px;
+    max-width: 300px;
 }
 
-@media (max-width: 1000px) {
-    .row-section{
+.decider_content{
+    display: flex;
+    justify-content: center;
+
+}
+
+.decider_img{
+    height: 600px;
+    background-size: cover;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgba(1,66,122,1);
+}
+
+.footer_newsletter{
+    margin-left: 20px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer_contact{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.footer_contact p {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.newsletterbtn{
+    background-color: rgb(0, 88, 165);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 7px;
+        font-family: 'Courier New', Courier, monospace;
+}
+#newstext{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: transparent;
+        font-family: 'Courier New', Courier, monospace;
+}
+.newsletterbtn:active{
+    background-color: rgba(1,66,122,1);
+    
+}
+
+.inputnews{
+    height: 30px;
+    border-radius: 7px;
+}
+
+.decider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    flex-wrap: wrap; 
+}
+
+.decider_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.decider_content h2 {
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.image_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.decider_img {
+    background-size: cover;
+    height: 600px;
+    display: block;
+}
+
+.image_button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.image_button:hover {
+    opacity: 1;
+    background-color: #0056b3;
+}
+
+.parents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.parents_content{
+    max-width: 1500px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.parents_content h2{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .row-section {
         flex-direction: column;
-        margin-left: 150px;
+        justify-content: center;
+    }
+
+    .first_row_img {
+        height: 500px;
+        width: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .row_content_second,
+    .row_content_first {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row_content_texts {
+        font-size: 1.25rem;
+    }
+
+    .rectangle_bar {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 600px;
     }
 }

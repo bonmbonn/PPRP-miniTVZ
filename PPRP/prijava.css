@@ -1,0 +1,198 @@
+
+.nav_links li a.aktivni_navLink {
+    color: rgb(0, 127, 212);
+    border-bottom: 2px solid rgb(0, 127, 212);
+    padding-bottom: 5px;
+}
+
+.registracija_main {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 150px);
+    background-image: url(./images_home/prijava_pozadina.png);
+    background-size: cover;
+
+}
+
+
+.regForm_okvir {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: 20px;
+}
+
+.regForm_okvir h1 {
+    text-align: center;
+    color: rgba(1, 66, 122, 1);
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.regForm_okvir .forma_uvod {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fdfdfd;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: rgba(1, 66, 122, 0.9);
+    font-size: 1.2rem;
+}
+
+.forma_grupaDiv {
+    margin-bottom: 20px;
+}
+
+.forma_grupaDiv label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.forma_grupaDiv input[type="text"],
+.forma_grupaDiv input[type="email"],
+.forma_grupaDiv input[type="tel"],
+.forma_grupaDiv input[type="date"],
+.forma_grupaDiv select,
+.forma_grupaDiv textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forma_grupaDiv input:focus,
+.forma_grupaDiv select:focus,
+.forma_grupaDiv textarea:focus {
+    border-color: rgba(1, 66, 122, 1);
+    box-shadow: 0 0 0 0.2rem rgba(1, 66, 122, 0.25);
+    outline: none;
+}
+
+.forma_grupaDiv textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+
+.forma_grupaDiv.checkbox_grupaArea {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.forma_grupaDiv.checkbox_grupaArea input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.uvijeticheck{
+    margin-top: 20px;
+}
+
+
+.submit_gumbFinal {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.submit_gumbFinal:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.submit_gumbFinal:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .regForm_okvirWrapper {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    .regForm_okvirWrapper h1 {
+        font-size: 2rem;
+    }
+
+    .forma_grupaDiv label {
+        font-size: 0.9rem;
+    }
+
+    .forma_grupaDiv input[type="text"],
+    .forma_grupaDiv input[type="email"],
+    .forma_grupaDiv input[type="tel"],
+    .forma_grupaDiv input[type="date"],
+    .forma_grupaDiv select,
+    .forma_grupaDiv textarea {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .submit_gumbFinal {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .registracija_glavniKontejner {
+        padding-top: 120px;
+    }
+     .regForm_okvirWrapper h1 {
+        font-size: 1.8rem;
+    }
+    .forma_uvodP {
+        font-size: 1rem;
+    }
+}
