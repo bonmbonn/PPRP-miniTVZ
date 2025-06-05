@@ -1,4 +1,4 @@
-*{
+*:not(i){
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -128,17 +128,16 @@ nav{
     align-items: top;
 }
 
-.row_content_texts{
+.row_content_texts {
     font-size: 1.33rem;
     display: flex;
     flex-direction: column; 
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center; 
-    text-align: center; 
-    margin-left: 70px;
-    margin-right: 70px;
-    max-width: 500px;
     text-align: left;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .row_content_texts h2{
@@ -158,9 +157,21 @@ nav{
     border-radius: 8px;
 }
 
-#first_opis{
+#first_opis {
     margin-top: 15px;
-    width: 500px;
+    width: 100%;
+}
+
+#left_image_first_row{
+    margin-right: -20px;
+}
+
+#right_image_first_row{
+    margin-left: -20px;
+}
+
+i{
+    font-size: 6em;
 }
 
 .rectangle_bar{
@@ -185,17 +196,6 @@ nav{
     text-align: center;
     gap: 10px;
     max-width: 300px;
-}
-
-.decider_content{
-    display: flex;
-    justify-content: center;
-
-}
-
-.decider_img{
-    height: 600px;
-    background-size: cover;
 }
 
 .footer{
@@ -263,7 +263,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 150px;
+    gap: 50px 150px;
     padding-top: 70px;
     padding-bottom: 70px;
     flex-wrap: wrap; 
@@ -273,6 +273,8 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+     width: calc(33.333% - 100px);
+    box-sizing: border-box;
 }
 
 .decider_content h2 {
@@ -289,9 +291,11 @@ nav{
 }
 
 .decider_img {
-    background-size: cover;
-    height: 600px;
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
     display: block;
+    border-radius: 10px;
 }
 
 .image_button {
@@ -334,35 +338,29 @@ nav{
     margin-bottom: 20px;
 }
 
+
+
 @media (max-width: 1200px) {
     .row-section {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .row_content_first,
+    .row_content_second {
+        flex-direction: column;
+        align-items: center;
     }
 
     .first_row_img {
-        height: 500px;
-        width: auto;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-    .row_content_second,
-    .row_content_first {
-        display: flex;
-        justify-content: center;
+        height: auto;
+        width: 90%;
     }
 
     .row_content_texts {
-        font-size: 1.25rem;
-    }
-
-    .rectangle_bar {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        height: 600px;
+        margin: 0;
+        padding: 0 20px;
     }
 }
+
