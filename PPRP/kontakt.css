@@ -1,0 +1,79 @@
+
+.kontakt_info_blok,
+.lokacija_info_blok,
+.newsletter_sekcija {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    margin: 40px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 1.8; 
+}
+
+
+.kontakt_info_blok h2,
+.lokacija_info_blok h2,
+.newsletter_sekcija h2 {
+    color: #1a1a1a;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+
+.kontakt_info_blok p,
+.lokacija_info_blok p,
+.newsletter_sekcija p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+
+.kontakt_info_blok a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.kontakt_info_blok a:hover {
+    text-decoration: underline;
+}
+
+
+.mapa_okvir {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.newsletter_forma {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.newsletter_forma input[type="email"] {
+    padding: 14px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.newsletter_forma button {
+    padding: 14px;
+    font-size: 1em;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter_forma button:hover {
+    background-color: #003f80;
+}
