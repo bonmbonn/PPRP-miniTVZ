@@ -347,6 +347,9 @@ i{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+#kutak{
+    padding-top: 3%;
+}
 
 
 @media (max-width: 1200px) {
