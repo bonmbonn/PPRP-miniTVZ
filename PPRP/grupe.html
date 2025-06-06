@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GRUPE - Mini TVZ</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./prijava.css" />
+    <link rel="stylesheet" href="./kontakt.css" />
+    <style>
+        .grupe_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .grupa_karton {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .grupa_slika {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .grupa_karton h3 {
+            margin-top: 0;
+        }
+        .opis_kratki {
+            margin-bottom: 10px;
+        }
+        .opis_detaljni {
+            display: none;
+            margin-top: 10px;
+            color: #444;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .saznaj_vise_btn {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #0078d7;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            user-select: none;
+        }
+        .saznaj_vise_btn:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="./index.html"><img src="./images_home/tvz_logo.webp" alt="logo tvz organizacije" class="tvz_logo" /></a>
+        </div>
+        <ul class="nav_links">
+            <li><a href="./index.html">NASLOVNA</a></li>
+            <li><a href="./kontakt.html">KONTAKT</a></li>
+            <li><a href="./grupe.html" class="aktivni_navLink">GRUPE</a></li>
+            <li><a href="./prijava.html">PRIJAVA</a></li>
+        </ul>
+    </nav>
+    <main class="registracija_main">
+        <div class="regForm_okvir">
+            <h1>Naše grupe</h1>
+            <p class="forma_uvod">Izaberi grupu i saznaj više o radionici</p>
+
+            <section class="grupe_grid">
+                <div class="grupa_karton">
+                    <img src="./images_home/grupa1.jpg" class="grupa_slika" />
+                    <h3>Kreativni razvoj</h3>
+                    <p class="opis_kratki">Kratki opis grupe gdje se potiče kreativnost kroz radionice.</p>
+                    <p class="opis_detaljni">
+                        Ova grupa je namijenjena svima koji žele razvijati svoju kreativnost kroz razne umjetničke i praktične zadatke. Radionice uključuju crtanje, slikanje, izradu rukotvorina, te pisanje kratkih priča i poezije. Cilj je potaknuti izražavanje ideja i osjećaja na inovativan način, a radionice su prilagođene različitim dobnim skupinama i razinama znanja. Sudionici će imati priliku raditi i na grupnim projektima koji razvijaju suradnju i međusobno učenje.
+                    </p>
+                    <button class="saznaj_vise_btn">Saznaj više</button>
+                </div>
+                <div class="grupa_karton">
+                    <img src="./images_home/grupa2.jfif" class="grupa_slika" />
+                    <h3>Tehničke vještine</h3>
+                    <p class="opis_kratki">Kratki opis grupe s fokusom na tehničke i digitalne vještine.</p>
+                    <p class="opis_detaljni">
+                        Grupa je fokusirana na razvoj tehničkih znanja i digitalnih vještina. Polaznici uče osnove programiranja, rada s mikrokompjuterima, elektroniku, robotiku i druge tehnologije. Radionice su praktične i ciljaju na razvijanje kritičkog razmišljanja i rješavanja problema kroz projektni rad. Ova grupa također pruža priliku za rad u timovima i upoznavanje s modernim alatima i trendovima u IT industriji.
+                    </p>
+                    <button class="saznaj_vise_btn">Saznaj više</button>
+                </div>
+                <div class="grupa_karton">
+                    <img src="./images_home/grupa3.jfif" class="grupa_slika" />
+                    <h3>Robotika i inovacije</h3>
+                    <p class="opis_kratki">Kratki opis grupe posvećene robotici i tehnološkim inovacijama.</p>
+                    <p class="opis_detaljni">
+                        Ova grupa pruža djeci priliku da uče o robotici, automatizaciji i inovacijama kroz praktične radionice i projekte. Polaznici sastavljaju i programiraju robote, istražuju nove tehnologije i sudjeluju u natjecanjima. Cilj je razviti tehničke vještine, kreativno razmišljanje i sposobnost timskog rada, pripremajući ih za buduće izazove u STEM područjima.
+                    </p>
+                    <button class="saznaj_vise_btn">Saznaj više</button>
+                </div>
+                <div class="grupa_karton">
+                    <img src="./images_home/grupa4.jfif" class="grupa_slika" />
+                    <h3>Elektotehnika za djecu</h3>
+                    <p class="opis_kratki">Uvod u osnove struje, električnih krugova i sigurnosti kroz zabavne radionice.</p>
+                    <p class="opis_detaljni">
+                        Polaznici će spojiti jednostavne električne sklopove, naučiti razliku između vodiča i izolatora te koristiti osnovne alate uz nadzor mentora.
+                    </p>
+                    <button class="saznaj_vise_btn">Saznaj više</button>
+                </div>
+                <div class="grupa_karton">
+                    <img src="./images_home/grupa5.png" class="grupa_slika" />
+                    <h3>Osnove programiranja za djecu</h3>
+                    <p class="opis_kratki">Djeca se upoznaju s osnovama programiranja kroz igre i vizualno kodiranje.</p>
+                    <p class="opis_detaljni">
+                        Kroz Scratch, Blockly i slične alate, djeca uče kako razmišljati kao programeri, razvijaju logiku i rješavaju probleme korak po korak.
+                    </p>
+                    <button class="saznaj_vise_btn">Saznaj više</button>
+                </div>
+                <div class="grupa_karton">
+                    <img src="./images_home/grupa6.jfif" class="grupa_slika" />
+                    <h3>Konstrukcija robotića</h3>
+                    <p class="opis_kratki">Spajamo mehaniku i elektroniku u malim projektima robota koje djeca sastavljaju.</p>
+                    <p class="opis_detaljni">
+                        Djeca će uz pomoć mentora naučiti kako spojiti kotače, senzore i mikrokontrolere te stvoriti jednostavne pokretne robote koje mogu programirati i upravljati njima.
+                    </p>
+                    <button class="saznaj_vise_btn">Saznaj više</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_newsletter">
+            <p id="newstext">Prijavite se na newsletter:</p>
+            <input type="text" class="inputnews" placeholder=" npr. primjer@gmail.hr" />
+            <button class="newsletterbtn">Pošalji</button>
+        </div>
+        <div class="footer_contact">
+            <p>minitvz@gmail.com</p>
+            <p>+385xxxxxxx</p>
+            <p>Vrbik 8, 10000, Zagreb</p>
+            <p>&#169 2025</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.saznaj_vise_btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const karton = btn.closest('.grupa_karton');
+                const detaljniOpis = karton.querySelector('.opis_detaljni');
+                if (detaljniOpis.style.display === 'block') {
+                    detaljniOpis.style.display = 'none';
+                    btn.textContent = 'Saznaj više';
+                } else {
+                    detaljniOpis.style.display = 'block';
+                    btn.textContent = 'Smanji';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
